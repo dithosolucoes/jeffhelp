@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Help - Marido de Aluguel | Manutenção Residencial em Guaratiba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .bg-custom-dark { background-color: #121826; }
+        .text-brand-yellow { color: #FFD700; }
+        .bg-brand-yellow { background-color: #FFD700; }
+        .bg-brand-green { background-color: #25D366; }
+        .border-brand-yellow { border-color: #FFD700; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+        .card-hover:hover { transform: translateY(-10px); border-color: #FFD700; transition: all 0.3s ease; }
+        .timeline-dot { width: 16px; height: 16px; background: #FFD700; border-radius: 50%; position: absolute; left: -8px; top: 0; }
+    </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#1F2937]">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-custom-dark/95 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-yellow p-1 rounded">
+                    <i class="fa-solid fa-screwdriver-wrench text-black text-xl"></i>
+                </div>
+                <span class="text-white font-extrabold text-xl tracking-tighter">JEFF <span class="text-brand-yellow">HELP</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-white/80 font-medium">
+                <a href="#home" class="hover:text-brand-yellow transition">Início</a>
+                <a href="#services" class="hover:text-brand-yellow transition">Serviços</a>
+                <a href="#about" class="hover:text-brand-yellow transition">Por que o Jeff?</a>
+                <a href="#social-proof" class="hover:text-brand-yellow transition">Depoimentos</a>
+            </div>
+            <a href="https://wa.me/5521997428969" target="_blank" class="bg-brand-green text-white px-5 py-2 rounded-full font-bold text-sm hover:scale-105 transition hidden sm:block">
+                <i class="fa-brands fa-whatsapp mr-2"></i>ORÇAMENTO
+            </a>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-custom-dark">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2070" class="w-full h-full object-cover opacity-30" alt="Ferramentas de manutenção">
+            <div class="absolute inset-0 bg-gradient-to-r from-custom-dark via-custom-dark/80 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-fade-in-up">
+                <span class="text-brand-yellow font-bold tracking-widest uppercase text-sm mb-4 block">Marido de Aluguel em Pedra de Guaratiba</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Problemas em casa? <br> <span class="text-brand-yellow italic">O Jeff Resolve.</span>
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-lg">
+                    Serviços de manutenção, elétrica e hidráulica com rapidez, confiança e o capricho que seu lar merece.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5521997428969" class="bg-brand-green hover:bg-[#1eb956] text-white px-8 py-4 rounded-xl font-extrabold text-center text-lg shadow-xl shadow-green-900/20 transition-all flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> PEDIR ORÇAMENTO AGORA
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block relative">
+                <div class="border-4 border-brand-yellow rounded-2xl p-2 rotate-3 hover:rotate-0 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-2xl" alt="Jeff trabalhando">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PAIN POINT & SOLUTION -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#121826] mb-4">Chega de dor de cabeça com reparos inacabados</h2>
+                <div class="h-1.5 w-24 bg-brand-yellow mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <p class="text-xl text-gray-600 leading-relaxed italic border-l-4 border-brand-yellow pl-6">
+                        "Eu sei como é frustrante ter uma torneira pingando ou um chuveiro que queima bem na hora do banho e não ter tempo ou as ferramentas certas para consertar."
+                    </p>
+                    <ul class="space-y-4 pt-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Falta de tempo para cuidar da manutenção básica.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Medo de contratar profissionais que somem ou fazem "gambiarra".</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                            <span class="text-gray-700 font-medium">Móveis novos parados na caixa por falta de montador.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-[#F3F4F6] p-8 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-yellow text-custom-dark px-4 py-2 font-bold rounded-bl-xl text-sm italic">O JEFF RESOLVE</div>
+                    <h3 class="text-2xl font-bold mb-6">Minha Solução para Você:</h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+                            <i class="fa-solid fa-bolt-lightning text-brand-yellow text-2xl"></i>
+                            <span class="font-semibold text-gray-800">Rapidez no Atendimento</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+                            <i class="fa-solid fa-broom text-brand-yellow text-2xl"></i>
+                            <span class="font-semibold text-gray-800">Serviço Limpo e Organizado</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+                            <i class="fa-solid fa-shield-halved text-brand-yellow text-2xl"></i>
+                            <span class="font-semibold text-gray-800">Garantia em Todos os Serviços</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SERVIÇOS ESPECIALIZADOS -->
+    <section id="services" class="py-24 bg-[#121826] text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <span class="text-brand-yellow font-bold uppercase tracking-wider">O que eu faço</span>
+                    <h2 class="text-4xl font-extrabold mt-2 italic">Serviços Profissionais</h2>
+                </div>
+                <p class="text-gray-400 max-w-md">Do pequeno reparo à manutenção completa. Confira as categorias que atendo com maestria.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Elétrica -->
+                <div class="group border border-white/10 p-8 rounded-3xl hover:bg-white/5 transition duration-300 card-hover">
+                    <div class="mb-6"><i class="fa-solid fa-plug-circle-bolt text-brand-yellow text-4xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Elétrica</h3>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li>• Troca de Resistência de Chuveiro</li>
+                        <li>• Instalação de Ventiladores de Teto</li>
+                        <li>• Troca de Tomadas e Interruptores</li>
+                        <li>• Instalação de Luminárias/Lustres</li>
+                    </ul>
+                </div>
+
+                <!-- Hidráulica -->
+                <div class="group border border-white/10 p-8 rounded-3xl hover:bg-white/5 transition duration-300 card-hover">
+                    <div class="mb-6"><i class="fa-solid fa-faucet-drip text-brand-yellow text-4xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Hidráulica</h3>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li>• Reparo em Vazamentos</li>
+                        <li>• Troca de Torneiras e Sifões</li>
+                        <li>• Limpeza de Caixa D'água</li>
+                        <li>• Instalação de Vaso Sanitário</li>
+                    </ul>
+                </div>
+
+                <!-- Montagem e Pintura -->
+                <div class="group border border-white/10 p-8 rounded-3xl hover:bg-white/5 transition duration-300 card-hover">
+                    <div class="mb-6"><i class="fa-solid fa-paint-roller text-brand-yellow text-4xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Montagem & Pintura</h3>
+                    <ul class="text-gray-400 space-y-2 mb-6">
+                        <li>• Montagem de Móveis Novos</li>
+                        <li>• Pintura de Portas e Grades</li>
+                        <li>• Pequenos Retoques em Paredes</li>
+                        <li>• Instalação de Prateleiras e Quadros</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-xl mb-6">Não viu o que precisava? <span class="text-brand-yellow font-bold">Eu resolvo quase tudo!</span></p>
+                <a href="https://wa.me/5521997428969" class="inline-block border-2 border-brand-yellow text-brand-yellow px-8 py-3 rounded-full font-bold hover:bg-brand-yellow hover:text-black transition uppercase tracking-widest text-sm">Consultar Outro Serviço</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: DIFERENCIAIS -->
+    <section class="py-16 bg-brand-yellow">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around gap-12 text-custom-dark">
+            <div class="flex flex-col items-center text-center max-w-[200px]">
+                <i class="fa-solid fa-clock-rotate-left text-4xl mb-4"></i>
+                <h4 class="font-extrabold uppercase text-sm">Pontualidade</h4>
+                <p class="text-sm font-medium opacity-80 italic leading-tight mt-1">Horário marcado é compromisso levado a sério.</p>
+            </div>
+            <div class="flex flex-col items-center text-center max-w-[200px]">
+                <i class="fa-solid fa-soap text-4xl mb-4"></i>
+                <h4 class="font-extrabold uppercase text-sm">Limpeza Pós-Obra</h4>
+                <p class="text-sm font-medium opacity-80 italic leading-tight mt-1">Nada de sujeira. Deixo o ambiente como encontrei.</p>
+            </div>
+            <div class="flex flex-col items-center text-center max-w-[200px]">
+                <i class="fa-solid fa-file-invoice-dollar text-4xl mb-4"></i>
+                <h4 class="font-extrabold uppercase text-sm">Preço Justo</h4>
+                <p class="text-sm font-medium opacity-80 italic leading-tight mt-1">Honestidade total no orçamento inicial.</p>
+            </div>
+            <div class="flex flex-col items-center text-center max-w-[200px]">
+                <i class="fa-solid fa-handshake-angle text-4xl mb-4"></i>
+                <h4 class="font-extrabold uppercase text-sm">Garantia</h4>
+                <p class="text-sm font-medium opacity-80 italic leading-tight mt-1">Se o problema voltar, eu volto e resolvo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PROVA SOCIAL -->
+    <section id="social-proof" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-center text-4xl font-extrabold mb-16 italic">Quem já chamou o Jeff</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-brand-yellow relative">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 leading-relaxed">"O Jeff foi super atencioso. Instalou o ventilador de teto aqui em Pedra de Guaratiba e nem parecia que teve obra, de tão limpo que ele deixou tudo."</p>
+                    <div class="font-bold text-[#121826]">Sílvia Almeida</div>
+                    <div class="text-sm text-gray-500 italic">Moradora de Guaratiba</div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-gray-200 text-4xl"></i>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-brand-yellow relative">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 leading-relaxed">"Precisei de um reparo urgente num vazamento no banheiro. O Jeff veio no mesmo dia e resolveu. Preço muito justo e cara muito gente boa!"</p>
+                    <div class="font-bold text-[#121826]">Marcos Vinícius</div>
+                    <div class="text-sm text-gray-500 italic">Morador de Sepetiba</div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-gray-200 text-4xl"></i>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-brand-yellow relative">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 leading-relaxed">"Montou meu guarda-roupa que comprei na internet. Profissional muito organizado, recomendo de olhos fechados."</p>
+                    <div class="font-bold text-[#121826]">Ana Paula</div>
+                    <div class="text-sm text-gray-500 italic">Barra de Guaratiba</div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-gray-200 text-4xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: GALERIA RESULTADOS -->
+    <section class="py-24 bg-[#F3F4F6]">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold mb-12 text-center">Resultados Que Falam Por Si</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&q=80&w=800" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500" alt="Manutenção Elétrica">
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                        <p class="text-white font-bold italic">Manutenção de Painel Elétrico</p>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500" alt="Instalação Hidráulica">
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                        <p class="text-white font-bold italic">Reparo Hidráulico Completo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: COMO FUNCIONA -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-center text-4xl font-extrabold mb-20 italic">Passo a Passo Para Sua Solução</h2>
+            
+            <div class="relative border-l-4 border-dashed border-gray-200 ml-4 md:ml-0 md:flex md:border-l-0 md:border-t-4 md:justify-between">
+                <!-- Step 1 -->
+                <div class="relative pl-10 md:pl-0 md:pt-10 mb-12 md:mb-0 md:w-1/4">
+                    <div class="absolute -left-3 md:left-1/2 md:-translate-x-1/2 md:-top-5 w-10 h-10 bg-brand-yellow rounded-full flex items-center justify-center font-bold text-black border-4 border-white shadow-md">1</div>
+                    <div class="md:text-center">
+                        <h4 class="font-extrabold text-lg mb-2">Contato</h4>
+                        <p class="text-gray-500 text-sm">Me chame pelo WhatsApp e conte seu problema.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative pl-10 md:pl-0 md:pt-10 mb-12 md:mb-0 md:w-1/4">
+                    <div class="absolute -left-3 md:left-1/2 md:-translate-x-1/2 md:-top-5 w-10 h-10 bg-brand-yellow rounded-full flex items-center justify-center font-bold text-black border-4 border-white shadow-md">2</div>
+                    <div class="md:text-center">
+                        <h4 class="font-extrabold text-lg mb-2">Fotos/Vídeos</h4>
+                        <p class="text-gray-500 text-sm">Mande imagens do que precisa ser consertado.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative pl-10 md:pl-0 md:pt-10 mb-12 md:mb-0 md:w-1/4">
+                    <div class="absolute -left-3 md:left-1/2 md:-translate-x-1/2 md:-top-5 w-10 h-10 bg-brand-yellow rounded-full flex items-center justify-center font-bold text-black border-4 border-white shadow-md">3</div>
+                    <div class="md:text-center">
+                        <h4 class="font-extrabold text-lg mb-2">Orçamento</h4>
+                        <p class="text-gray-500 text-sm">Eu envio o valor justo e combinamos o horário.</p>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative pl-10 md:pl-0 md:pt-10 md:w-1/4">
+                    <div class="absolute -left-3 md:left-1/2 md:-translate-x-1/2 md:-top-5 w-10 h-10 bg-brand-yellow rounded-full flex items-center justify-center font-bold text-black border-4 border-white shadow-md">4</div>
+                    <div class="md:text-center">
+                        <h4 class="font-extrabold text-lg mb-2">Execução</h4>
+                        <p class="text-gray-500 text-sm">Eu vou até você e deixo tudo funcionando!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: AREA DE ATENDIMENTO -->
+    <section class="py-24 bg-custom-dark text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-6 italic">Onde o Jeff Atende?</h2>
+                <p class="text-gray-400 mb-8">Minha base é em Pedra de Guaratiba, mas levo minha maleta de ferramentas para toda a região vizinha.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl">
+                        <i class="fa-solid fa-location-dot text-brand-yellow"></i>
+                        <span class="font-bold">Pedra de Guaratiba (Foco Principal)</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl">
+                        <i class="fa-solid fa-location-arrow text-brand-yellow"></i>
+                        <span>Barra de Guaratiba, Sepetiba e Santa Cruz</span>
+                    </div>
+                </div>
+                <div class="mt-8 text-sm text-gray-500 italic">
+                    <p>Rua Professora Eulalia Lahmeyer, 201 - Rio de Janeiro - RJ</p>
+                </div>
+            </div>
+            <div class="h-[400px] rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.3283259461125!2d-43.6402773!3d-23.0250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdd986df952bf%3A0x868b813735f49d32!2sR.%20Prof.%20Eul%C3%A1lia%20Lahmeyer%2C%20201%20-%20Pedra%20de%20Guaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023025-047!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FAQ & FOOTER -->
+    <section class="py-24 bg-white" id="contact">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-center text-3xl font-extrabold mb-12 italic">Dúvidas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-gray-50 rounded-2xl p-4 border border-gray-100 open:border-brand-yellow transition">
+                    <summary class="list-none flex justify-between items-center font-bold cursor-pointer">
+                        Quais as formas de pagamento?
+                        <i class="fa-solid fa-plus group-open:rotate-45 transition text-brand-yellow"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Aceito PIX, Cartão de Débito e Crédito, além de dinheiro em espécie.</p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-2xl p-4 border border-gray-100 open:border-brand-yellow transition">
+                    <summary class="list-none flex justify-between items-center font-bold cursor-pointer">
+                        Você cobra visita?
+                        <i class="fa-solid fa-plus group-open:rotate-45 transition text-brand-yellow"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Para orçamentos simples via WhatsApp com fotos, não há custo. Para diagnósticos complexos no local em áreas distantes, podemos combinar uma taxa de deslocamento que é abatida no valor do serviço.</p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-2xl p-4 border border-gray-100 open:border-brand-yellow transition">
+                    <summary class="list-none flex justify-between items-center font-bold cursor-pointer">
+                        Os serviços têm garantia?
+                        <i class="fa-solid fa-plus group-open:rotate-45 transition text-brand-yellow"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Sim! Todos os serviços realizados pelo Jeff Help contam com garantia de 90 dias contra defeitos de execução.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-custom-dark text-white py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="flex items-center gap-2 mb-4 justify-center md:justify-start">
+                    <div class="bg-brand-yellow p-1 rounded">
+                        <i class="fa-solid fa-screwdriver-wrench text-black text-xl"></i>
+                    </div>
+                    <span class="text-white font-extrabold text-xl tracking-tighter">JEFF <span class="text-brand-yellow">HELP</span></span>
+                </div>
+                <p class="text-gray-500 text-sm italic max-w-xs">Qualidade e confiança em cada aperto de parafuso.</p>
+            </div>
+            
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://wa.me/5521997428969" class="text-2xl font-bold text-brand-yellow hover:scale-110 transition">(21) 99742-8969</a>
+                <div class="flex gap-6">
+                    <a href="#" class="text-2xl hover:text-brand-yellow transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5521997428969" class="text-2xl hover:text-brand-yellow transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right">
+                <p class="text-gray-400 font-bold mb-2">Horário de Atendimento</p>
+                <p class="text-sm text-gray-500">Segunda a Sábado: 08h às 18h</p>
+                <p class="text-sm text-gray-500 italic mt-4">&copy; 2023 Jeff Help. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOAT CTA -->
+    <a href="https://wa.me/5521997428969" class="fixed bottom-6 right-6 z-50 bg-brand-green p-4 rounded-full shadow-2xl animate-bounce hover:scale-110 transition duration-300">
+        <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
+    </a>
+
+</body>
+</html>
