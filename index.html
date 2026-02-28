@@ -299,7 +299,10 @@
             </div>
             <div class="order-1 md:order-2 relative">
                 <div class="absolute -inset-4 bg-brand-yellow/20 rounded-3xl rotate-3"></div>
-                <img src="./jeff-perfil.jpg" onerror="this.src='https://placehold.co/600x800?text=Adicione+jeff-perfil.jpg'" alt="Foto do Jeff - Marido de Aluguel" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[3/4] border-4 border-white">
+                <img src="./jeff-perfil.jpg" 
+                     onerror="if (this.src.endsWith('jeff-perfil.jpg')) this.src='./jeff-perfil.jpeg'; else if (this.src.endsWith('jeff-perfil.jpeg')) this.src='./jeff-perfil.JPG'; else this.src='https://placehold.co/600x800?text=Adicione+jeff-perfil.jpg'" 
+                     alt="Foto do Jeff - Marido de Aluguel" 
+                     class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[3/4] border-4 border-white">
                 <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-brand-yellow">
                     <p class="font-bold text-[#121826]">Jefferson</p>
                     <p class="text-xs text-gray-500 uppercase tracking-wider">Fundador & Especialista</p>
